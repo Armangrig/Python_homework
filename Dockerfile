@@ -2,7 +2,7 @@ FROM python
 
 RUN apt update && apt install -y
 
-RUN pip install virtualenv -y && virtualenv venv
+RUN pip install virtualenv && virtualenv venv -y
 
 RUN linux > source ./venv/bin/activate
 
