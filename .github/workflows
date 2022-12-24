@@ -1,17 +1,12 @@
-name: mydocker
+name: mydockerpython
 on: 
   push:
 jobs:
-  docker1:
-   
-   strategy:
-      matrix:
-        version: [10, 12, 14]
-        os: [ubuntu-latest]
-        
-   runs-on: ${{ matrix.os }}
+  docpython:
+           
+   runs-on: ubuntu-latest
    steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
 
     - name: Login to Docker Hub
       run: |
@@ -22,4 +17,4 @@ jobs:
       
       with:
         push: true
-        tags: armangrig88/golang:latest
+        tags: armangrig88/python1:latest
