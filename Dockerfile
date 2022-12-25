@@ -4,7 +4,7 @@ FROM python:3.11
 
 RUN apt update && apt install -y
 
-RUN pip install virtualenv && virtualenv venv -y
+RUN pip install virtualenv && virtualenv venv 
 
 RUN linux > source ./venv/bin/activate
 
