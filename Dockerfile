@@ -14,7 +14,7 @@ WORKDIR /app
 
 COPY . .
 
-NV FLASK_APP=python1.ph
+ENV FLASK_APP=python1.ph
 ENV FLASK_RUN_HOST=0.0.0.0
 ENV FLASK_ENV=$mod
 
