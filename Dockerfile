@@ -1,3 +1,5 @@
+ARG mod=production
+
 FROM python:3.11
 
 RUN apt update && apt install -y
@@ -12,7 +14,7 @@ WORKDIR /app
 
 COPY . .
 
-NV FLASK_APP=app.py
+NV FLASK_APP=python1.ph
 ENV FLASK_RUN_HOST=0.0.0.0
 ENV FLASK_ENV=$mod
 
