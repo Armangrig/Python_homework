@@ -1,4 +1,4 @@
-FROM python:3.8
+FROM python
 
 RUN apt update && apt install -y
 
@@ -14,5 +14,5 @@ COPY . .
 
 ENV FLASK_ENV=${FLASK_ENV}
 
-CMD ["python:3.8", "python1.ph"]
+CMD ["python", "python1.ph"]
 
