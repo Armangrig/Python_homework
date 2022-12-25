@@ -14,5 +14,5 @@ COPY . .
 
 ENV FLASK_ENV=${FLASK_ENV}
 
-CMD ["python", "python1.ph"]
+CMD ["python:3.8", "python1.ph"]
 
