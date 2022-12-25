@@ -15,3 +15,4 @@ COPY . .
 ENV FLASK_ENV=${FLASK_ENV}
 
 CMD ["python", "python1.ph"]
+
