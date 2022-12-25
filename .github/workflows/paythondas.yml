@@ -18,3 +18,4 @@ jobs:
       with:
         push: true
         tags: armangrig88/python1:latest
+        
